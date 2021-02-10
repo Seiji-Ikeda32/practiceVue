@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            {{ message }}
+        </div>
+        <div id="example">
+            {{ greeting }}
+        </div>
+
+        <!-- 属性はマスタッシュ構文が使えないからv-bindを使う -->
+        <!-- v-bindのすぐ後ろに書いてある名前の内容に対してバインディングする。（URLを引数として呼び出す） -->
+        <div id="googleLink">
+            <a v-bind:href="url">Google</a>
+        </div>
+
+        <!-- <div id="app-2">
+            <span v-bind:title="message">
+              Hover your mouse over me for a few seconds
+              to see my dynamically bound title!
+            </span>
+        </div> -->
+        
+        <script src="index.js"></script>
+    </body>
+</html>
+
