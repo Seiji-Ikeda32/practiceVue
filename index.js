@@ -19,10 +19,20 @@ const googleLink = new Vue({
     },
 });
 
-// var app2 = new Vue({
-//     el: '#app-2',
-//     data: {
-//       message: 'You loaded this page on ' + new Date().toLocaleString()
-//     }
-//   })
-  
+const app3 = new Vue({
+  el: '#app3',
+  data: {
+    members: ['俺', 'あいつ', 'こいつ', '貴様','俺'],
+  },
+});
+
+const app4 = new Vue({
+  el: '#app4',
+  data: {
+    characters: {
+      hero: '桃太郎',
+      friend: 'イヌ',
+      enemy: '鬼',
+    },
+  },
+});
