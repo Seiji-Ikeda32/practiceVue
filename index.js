@@ -36,3 +36,27 @@ const app4 = new Vue({
     },
   },
 });
+
+const app5 = new Vue({
+  el: '#app5',
+  data: {
+    message: 'HelloWorld!'
+  },
+  methods: {
+    reverseMessage: function(){
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+
+const app6 = new Vue({
+  el: '#app6',
+  data: {
+    name: 'Seiji',
+  },
+  methods: {
+    sayHi: function(){
+      return 'Hi!';
+  }
+}
+})
