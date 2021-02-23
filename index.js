@@ -60,3 +60,44 @@ const app6 = new Vue({
   }
 }
 })
+
+const app7 = new Vue({
+  el: '#app7',
+  data: {
+    number: 0
+  }
+})
+
+const app8 = new Vue({
+  el: '#app8',
+  data: {
+    number: 0,
+    x: 0,
+    y: 0
+  },
+  methods: {
+    countUp: function(times){
+      this.number += 1 *times
+    },
+    changeMousePosition: function(event) {
+      this.x = event.clientX;
+      this.y = event.clientY;
+    },
+    noEvent: function(event) {
+      event.stopPropagation()
+    }
+  }
+})
+
+const app9 = new Vue({
+  el: '#app9',
+  data: {
+    name: ''
+  }
+})
+ const app10 = new Vue({
+   el: '#app10',
+   data: {
+     
+   }
+ })
