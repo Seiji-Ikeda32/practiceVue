@@ -64,9 +64,53 @@
 		</div>
 
 		<div id="app10">
-			<h1 class="red">Vue.js</h1>
+			<h1 :style="styleColor">Vue.js</h1>
 		</div>
 		
+		<div id="app11">
+			<p v-if="ok">OK!</p>
+			<p v-else-if="maybeOk">Maybe Ok!</p>
+			<p v-else>NOT OK...</p>
+		</div>
+    
+		<!-- テンプレートタグは表示されない。groupで条件分岐させたい時やまとめたりするために使う -->
+		<template>
+			<p>Hello Vue</p>
+			<p>Hello Vue</p>
+			<p>Hello Vue</p>
+		</template>
+
+		<div id="app12">
+			<ul>
+				<li v-for="value in object">{{value[1]}}</li>
+			</ul>
+			<ul>
+				<li v-for="value in object">{{value[0]}}</li>
+			</ul>
+			<ul>
+				<li v-for="value in object">{{value[2]}}</li>
+			</ul>
+		</div>
+
+		<div id="app13">
+			<template v-for="lastName in lastNames">
+					<li >{{lastName}}</li>
+					<hr>
+			</template>
+		</div>
+
+    <div id="app14">
+    <ul>         
+	<!-- 　　　　　　　　　  キーを指定することで紐づけられる -->
+			<div v-for="lastName in lastNames" :key="lastName">
+				<p>{{lastName}}</p>
+				<input type="text">
+			</div>
+    </ul>
+		<button @click="remove">先頭を削除</button>
+		</div>
+
+
 	<script src="index.js"></script>
 	</body>
 </html>

@@ -95,9 +95,51 @@ const app9 = new Vue({
     name: ''
   }
 })
- const app10 = new Vue({
+const app10 = new Vue({
    el: '#app10',
    data: {
-     
+     styleColor: {
+       color: 'red',
+       'background-color': 'blue'
+     }
    }
  })
+
+const app11 = new Vue({
+  el: '#app11',
+  data: {
+    ok:true,
+    maybeOk: false
+  }
+})
+
+const app12 = new Vue({
+  el: '#app12',
+  data: {
+    lastNames: ['yamda','tanaka','ikeda'],
+    object: {
+      lastName: ['yamda','tanaka','ikeda'],
+      firstName: ['seiji','takeshi','kouki'],
+      'age': ['21','22','23']
+    }
+  }
+})
+
+const app13 = new Vue({
+  el: '#app13',
+  data: {
+    lastNames: ['yamda','tanaka','ikeda'],
+  }
+})
+
+const app14 = new Vue({
+  el: '#app14',
+  data: {
+    lastNames: ['yamda','tanaka','ikeda']
+  },
+  methods: {
+    remove: function() {
+      this.lastNames.shift()
+    }
+  }
+})
