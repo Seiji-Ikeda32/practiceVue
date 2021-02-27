@@ -143,3 +143,20 @@ const app14 = new Vue({
     }
   }
 })
+
+const vm1 = new Vue({
+  el: '#app15',
+  data: {
+    message: 'hello React!'
+  }
+})
+
+const vm2 = new Vue({
+  el: '#app16',
+  methods: {
+    changeWord: function(){
+      vm1.message = 'Hello Vue!!!'
+    }
+  }
+})
+

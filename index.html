@@ -100,7 +100,7 @@
 		</div>
 
     <div id="app14">
-    <ul>         
+    <ul>
 	<!-- 　　　　　　　　　  キーを指定することで紐づけられる -->
 			<div v-for="lastName in lastNames" :key="lastName">
 				<p>{{lastName}}</p>
@@ -110,6 +110,17 @@
 		<button @click="remove">先頭を削除</button>
 		</div>
 
+		<div id="app15">
+			<p>{{message}}</p>
+		</div>
+
+		<div id="app16">
+			<button @click="changeWord">Reactなんて消えちまえ！</button>
+		</div>
+
+		<div id="app17">
+			<p>{{message}}</p>
+		</div>
 
 	<script src="index.js"></script>
 	</body>
